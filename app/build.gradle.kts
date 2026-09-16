@@ -43,7 +43,7 @@ android {
 
     splits {
         abi {
-            isEnable = true
+            isEnable = false // Harus false jika ingin build App Bundle (.aab) dengan shrinkResources
             reset()
             include("arm64-v8a", "armeabi-v7a")
             isUniversalApk = true
